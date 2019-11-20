@@ -737,7 +737,13 @@ font-size: 28px;
   flex-flow: row-reverse;
   width: 100%;
 }
+#competences > div.compl{
+  float: none
+}
+#competences > div.compr{
+  float: none;
 
+}
 .lunel{
   box-sizing: border-box;
   width: 100%;
@@ -746,7 +752,7 @@ font-size: 28px;
 
 .cont_luner{
   width: 26%;
-  
+
 }
 .luner{
   box-sizing: border-box;
