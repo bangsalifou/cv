@@ -30,32 +30,32 @@
             <div class="material-icon">
               <p><span class="lettrine"><a href="tel:0604140547"><i class="fas fa-phone-square-alt"></i></a></span>+(33)0604140547</p>
               <p><span class="lettrine"><a href="mailto:ciscoimagine@gmail.com"><i class="fas fa-envelope"></i></a></span>ciscoimagine@gmail.com</p>
-              <p><span class="lettrine"><a href="img/cv_francis_salifou_web.pdf" target="_blank"><i class="fas fa-file-download"></i></a></span>CV</p>
+              <p><span class="lettrine"><a href="img/cv_francis_salifou_web_print.pdf" target="_blank"><i class="fas fa-file-download"></i></a></span>CV</p>
             </div>
 
+
+
   </header>
-          <nav class="sticky">
 
+  <nav class="sticky">
+    <div class="conteneur-nav">
+      <label for="mobile"><i class="fas fa-bars fa-2x"></i></label>
+      <input type="checkbox" id="mobile" value="+(33)0604140547">
+      <div class="partage" style="font-size: 25px">
+        <a href="tel:0604140547"><i class="fas fa-phone-square-alt"></i></a>
+        <a href="mailto:ciscoimagine@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
 
-            <div class="conteneur-nav">
-                <label for="mobile"><i class="fas fa-bars fa-2x"></i></label>
-                <input type="checkbox" id="mobile" value="+(33)0604140547">
-                <div class="partage" style="font-size: 25px">
-                  <a href="tel:0604140547"><i class="fas fa-phone-square-alt"></i></a>
-                  <a href="mailto:ciscoimagine@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
-
-                <ul>
-                  <li><a href="#apropos">A propos</a></li>
-                  <li><a href="#formations">Formations</a></li>
-                  <li><a href="#Experiences">Expériences</a></li>
-                  <li><a href="#Portfolio">Portfolio</a></li>
-                  <li><a href="#Réalisations">Réalisations</a></li>
-                  <li><a href="#Contact">Contact</a></li>
-                </ul>
-              </div>
-            </nav>
-
+      <ul>
+        <li><a href="#apropos">A propos</a></li>
+        <li><a href="#formations">Formations</a></li>
+        <li><a href="#Experiences">Expériences</a></li>
+        <li><a href="#Portfolio">Portfolio</a></li>
+        <li><a href="#Réalisations">Réalisations</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
 
     <main>
@@ -171,7 +171,7 @@
                   2013-2014
                 </div>
                 <div class="ligne-titre">Opérateur sur presse numérique</div>
-                <div class"description">la production se matérialise sous la forme d'imprimés personnalisés<br>(livres, brochures, carnets, revues de presse, classeurs, cartes de voeux...)<br>"Sobook" Valenciennes 59</div>
+                <div class"description">la production se matérialise sous la forme d'imprimés personnalisés<br>(livres, brochures, carnets, revues de presse, classeurs, cartes de voeux...)<br>"Sobook" Roubaix 59</div>
               </li>
 
               <li class="ligne-item" ng-repeat="ligne_experience">
@@ -221,7 +221,7 @@
           <figure>
             <img class="lunel" src="img/oeil_forme_droite.png" alt="oeil_forme">
           </figure>
-        </div>
+     </div>
 
         <div class="compl">
           <div class="compl80">
@@ -241,11 +241,68 @@
           <figure class="cont_luner">
             <img class="luner" src="img/oeil_forme_gauche.png" alt="oeil_forme">
           </figure>
-
         </div>
       </section>
 
 
+      <section id="realisations">
+        <div class="realisations">
+          <h2><span class="lettrine">R</span>éalisations</h2>
+        </div>
+        <div class="realimg">
+
+        <div class="read">
+          <div class="read80">
+            <ul>
+              <li class="ligne-rea" ng-repeat="ligne_realisation">
+                <div class="lignetitre">PUBLICATIONS</div>
+                <div class="description">Magazine Marie-Claire Maison Nord-Pas de Calais-Picardie - Magazine international : Young Blood jeunes créateurs -
+                  Magazine international : Textile Report -
+                  Catalogue « Sala D’Art Jove » Barcelone, Espagne
+                  - Magazine UK Londres : Times Out
+                  - Reportage de Laura Levy/Jean-Marc Vasco pour France 3 Nord Pas de Calais
+                  Picardie</div>
+                </li>
+              </ul>
+              <ul>
+                <li class="ligne-rea" ng-repeat="ligne-realisation">
+                  <div class="lignetitre">COMMANDES PUBLIQUES</div>
+                  <div class="description">Photographe pour l’association « Banlieues du Monde » Ministère de la culture (Sénégal/Afrique)<br>
+                    Espace Beaujon et la Mode : réalisation Affiche grand format bâche microperforée (extérieur) - Toujours inoubliable/Voor Altijd Onvergetelijk : oeuvre en plein air 120cm*80cm "Kunstig gavere" Belgique</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+
+              <div class="real">
+                <div class="real80">
+                  <ul>
+                    <li class="ligne-rea" ng-repeat="ligne_realisation">
+                      <div class="lignetitre">PRIX</div>
+                      <div class"description">Tremplin Jeunes Créateurs Mairie de Paris
+                        section « photographie » 2000</div>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li class="ligne-rea" ng-repeat="ligne_realisation">
+                      <div class="lignetitre">EN MODE IMPRIMEUR</div>
+                      <div class"description">
+                        <p>Il n'y a pas de manière prédonné de voir la réalité<br>
+                          "EDITION PRODUCTION IMPRESSION"<br>
+
+                        </P>
+                      </div>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+
+              </section>
+              <!--fin de section-->
 
 
 
@@ -272,7 +329,11 @@
 
 
 
-    <!--  <section id="portfolio">
+
+
+
+
+      <!--<section id="portfolio">
         <div id="gallery">
           <div class="gallery">
             <img src="" alt="" width="" height="">
@@ -290,41 +351,51 @@
             <a target="_blank" href="">
               <img src="" alt="" width="" height="">
             </a>
-            <div class="title">          </div>
+          <div class="title">          </div>
 
-            <div class="gallery">
+          <div class="gallery">
               <a target="_blank" href="">
                 <img src="" alt="" width="" height="">
               </a>
-              <div class="title">          </div>
+          <div class="title">          </div>
 
-              <div class="gallery">
+          <div class="gallery">
                 <a target="_blank" href="">
                   <img src="" alt="" width="" height="">
                 </a>
-                <div class="title">          </div>
-                <div class="gallery">
-                  <a target="_blank" href="">
-                    <img src="" alt="" width="" height="">
-                  </a>
-                <div class="title">          </div>
-                <div class="gallery">
-                  <a target="_blank" href="">
-                    <img src="" alt="" width="" height="">
-                  </a>
-                <div class="title">          </div>
-                <div class="gallery">
-                  <a target="_blank" href="">
-                    <img src="" alt="" width="" height="">
-                  </a>
-                <div class="title">          </div>
-                <div class="gallery">
-                  <a target="_blank" href="">
-                    <img src="" alt="" width="" height="">
-                  </a>
-                <div class="title">          </div>
-          </section>-->
+          <div class="title">          </div>
 
+          <div class="gallery">
+                  <a target="_blank" href="">
+                    <img src="" alt="" width="" height="">
+                  </a>
+          <div class="title">          </div>
+
+          <div class="gallery">
+                    <a target="_blank" href="">
+                      <img src="" alt="" width="" height="">
+                    </a>
+          <div class="title">          </div>
+
+          <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="" alt="" width="" height="">
+                      </a>
+          <div class="title">          </div>
+
+          <div class="gallery">
+                        <a target="_blank" href="">
+                          <img src="" alt="" width="" height="">
+                        </a>
+          <div class="title">          </div>
+          <div class="gallery">
+                        <a target="_blank" href="">
+                          <img src="" alt="" width="" height="">
+                        </a>
+          <div class="title">          </div>
+
+        </section>
+      -->
 
 
     </main>

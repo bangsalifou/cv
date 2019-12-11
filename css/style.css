@@ -15,16 +15,16 @@ nav{
   top: 0;
   z-index: 100;
   list-style-type: none;
-
-  }
+}
 
 nav ul{
   padding: 0px;
   margin:  0px;
  list-style-type: none;
  text-decoration: none;
-
 }
+
+
 nav ul li{
   font-family: 'Hepta Slab', serif;
   text-align:center;
@@ -85,6 +85,7 @@ body > nav > div > ul > li:nth-child(4) > a{
 nav ul li {
 float: left;
 width: calc(100%/6);
+box-sizing: border-box;
 
 }
 
@@ -92,6 +93,15 @@ nav a:hover{
   color: #2abebe;
   border-bottom: : 2px solid #2abebe;
 }
+
+section{
+  padding: 45px 0;
+  box-sizing: border-box;
+}
+#apropos{
+  margin: 25px 0;
+}
+
 
  #apropos > div.blocgauche > p{
   text-align: justify;
@@ -184,6 +194,7 @@ body > header > div.material-icon > p:nth-child(3) > span > a > i{
   width: 20%;
   margin-top: 15px;
 }
+
 #bordure > img{
   border: solid 1px black;
 }
@@ -210,9 +221,9 @@ div.left > p{
 #formation > div:nth-child(n) > p > span{
   font-style: italic;
   font-weight: lighter;
-
-
 }
+
+
 
 div.right > p{
   text-indent: 25px;
@@ -399,9 +410,11 @@ ul.ligne li .year{
 .compr, .compl{
   font-family: 'Hepta Slab', serif;
   line-height:1.5em;
+  padding: 10px 0;
+  box-sizing: border-box;
 }
 
-}
+
 ul li .lignetitre{
   color:   color:rgba(0,0,0,0);
   font-size: 18px;
@@ -480,57 +493,164 @@ nav label, nav input{
   display: none;
 }
 
+.realisations{
+  padding-left:40px;
+  width: 25%;
+  box-sizing: border-box;
+}
 
 
+.read{
+  float: right;
+  width: 50%;
+  list-style-type: none;
+}
+.cread80{
+  float: right;
+  width: 80%;
+}
+.real{
+  float: left;
+  width: 50%;
+  list-style-type: none;
+}
+.real80{
+  float: left;
+  width: 80%;
+  text-align: right;
+}
+.read80{
+  float: right;
+  width: 80%;
+}
+
+.read, .real{
+  font-family: 'Hepta Slab', serif;
+  line-height:1.5em;
+}
+
+ul li .lignetitre{
+  color:   color:rgba(0,0,0,0);
+  font-size: 18px;
+}
+
+ul.ligne-rea li .description{
+  color:rgba(0,0,0,0.5);
+  font-size:12px;
+
+}
+.lignetitre{
+  font-weight: bold;
+    line-height:3.5em;
+}
+
+.read ul li{
+  list-style-type: none;
+  margin: auto;
+  background: #e9900b;
+  border-left:1px dashed #86D6FF;
+  padding:30px 15px;
+  position:relative;
+  /*height: 192.5px;*/
+  box-sizing: border-box;
+
+}
+
+.real ul li {
+  list-style-type: none;
+  margin: auto;
+  background: #e9900b;
+  border-left:1px dashed #86D6FF;
+  padding:30px 15px;
+  position:relative;
+  height: 192.5px;
+  box-sizing: border-box;
+}
+
+.real .real80 ul li:last-child{ border-left:0;}
+.real .real80 ul li::before{
+  position: absolute;
+  right: -18px;
+  top: -5px;
+  content: " ";
+  border: 8px solid rgba(255, 255, 255, 0.74);
+  border-radius: 500%;
+  background: #258CC7;
+  height: 20px;
+  width: 20px;
+  transition: all 500ms ease-in-out;
+}
 
 
+.read .read80 ul li:last-child{border-right: 0}
+.read .read80 ul li ::before{
+  position: absolute;
+  left: -18px;
+  top: -5px;
+  content: " ";
+  border: 8px solid rgba(255, 255, 255, 0.74);
+  border-radius: 500%;
+  background: #258CC7;
+  height: 20px;
+  width: 20px;
+  transition: all 500ms ease-in-out;
+}
+
+.realimg{
+  overflow: hidden;
+  background: url("../img/points_cardinaux_simple.png") center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding:10px 0;
+  box-sizing: border-box;
+}
+#competences{
+  overflow: hidden;
+}
 
 
-
-
-
-@media screen and (max-width:768px){
-
+@media screen and (min-width:370px) and (max-width:768px)
+{
   .vertical-align2{
-      width:100%;
+    width:100%;
   }
   .competences{
     padding:40px;
     width: 100%;
   }
-.vertical-align{
+  .vertical-align{
     width:100%;
-}
+  }
   ul.ligne li .year{
-      color: white;
-      width:100px;
-      font-size: 16px;
-      position: initial;
-}
-.material-icon{
-  display: none;
-}
- ul{
-  padding: 20px;
-}
-#competences > div.experience > h2{
-font-size: 28px;
-}
+    color: white;
+    width:100px;
+    font-size: 16px;
+    position: initial;
+  }
+  .material-icon{
+    display: none;
+  }
+  ul{
+    padding: 20px;
+  }
+  #competences > div.experience > h2{
+    font-size: 28px;
+  }
 
 
- nav label, .partage{
+  nav label, .partage{
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
     color: white;
   }
   .partage{
-  color: white;
-  width: 50%;
-  display: flex;
-  flex-direction: row-reverse;
-  padding-right: 25px;
-}
+    color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 25px;
+  }
 
   nav ul{
     display: none;
@@ -543,24 +663,25 @@ font-size: 28px;
   }
 
   nav label{
-      width: 50%;
-      padding-left: 25px;
-    }
+    width: 50%;
+    padding-left: 25px;
+  }
 
   .conteneur-nav{
-  display: flex;
-  flex-flow: row wrap;
-}
-    /*row-reverse*/
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+  }
+  /*row-reverse*/
 
   body > header > div.job{
     background: url("../img/cartedevisite_logo.jpg") no-repeat center center;
     background-size: cover 550%;/*sans cover*/
     background-position: center;
   }
-#monlogo{
-  display: none;
-}
+  #monlogo{
+    display: none;
+  }
   nav ul li{
     width: 100%;
     padding: 15px;
@@ -571,72 +692,72 @@ font-size: 28px;
     flex-flow: column nowrap;
   }
   .blocgauche{
-  padding: 10px;
-  box-sizing: border-box;
+    padding: 10px;
+    box-sizing: border-box;
     width: 100%;
 
   }
   .blocdroit>img{
-   width: 100%;
+    width: 100%;
   }
   #formation > div.left > p{
     font-size: 20px;
     text-align: left;
   }
-#formation{
-  display: flex;
-  flex-flow: column nowrap;
-  width: 100%;
+  #formation{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
 
-}
-#formation > div.right{
-  font-size: 20px;
-  text-align: right;
-}
-#formation > div.right1{
-  text-align: right;
-  font-size: 20px;
-}
-.left{
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-}
-#formation img{
-  height: 96px;
-}
-#formation > div.left > h2{
-  font-size: 28px;
-}
-#apropos > div.blocgauche > h2{
-  font-size: 28px;
-}
-#experience > div.experience > h2{
+  }
+  #formation > div.right{
+    font-size: 20px;
+    text-align: right;
+  }
+  #formation > div.right1{
+    text-align: right;
+    font-size: 20px;
+  }
+  .left{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #formation img{
+    height: 96px;
+  }
+  #formation > div.left > h2{
     font-size: 28px;
-}
-#bordure{
-  border:none;
-}
+  }
+  #apropos > div.blocgauche > h2{
+    font-size: 28px;
+  }
+  #experience > div.experience > h2{
+    font-size: 28px;
+  }
+  #bordure{
+    border:none;
+  }
 
-#experience > div.experience > h2 > span{
-  float: none;
-}
-.vertical-align ul.ligne li{
-  margin-left:auto;
-  box-sizing: border-box;
-}
+  #experience > div.experience > h2 > span{
+    float: none;
+  }
+  .vertical-align ul.ligne li{
+    margin-left:auto;
+    box-sizing: border-box;
+  }
 
 
-.right{
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-}
-.left1{
-  position: inherit;
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
+  .right{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .left1{
+    position: inherit;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
 
   }
   .right{
@@ -653,7 +774,7 @@ font-size: 28px;
   }
 
   nav label{
-        width: 50%;
+    width: 50%;
     padding-left: 25px;
   }
   body > header > div.job{
@@ -667,20 +788,23 @@ font-size: 28px;
     margin: auto;
   }
 
-
-
   body > header > div:nth-child(2) > div.material-icon{
     display: none;
   }
 
-
-#experience {
- position: relative;
-  width: 100%;
-  box-sizing: border-box;
-  margin: auto;
-}
-.compr ul li {
+  #experience {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  #competences {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  .compr ul li {
     list-style-type: none;
     margin: auto;
     background: #e9900b;
@@ -689,9 +813,9 @@ font-size: 28px;
     position: relative;
     box-sizing: border-box;
     height: 100%;
-}
+  }
 
-.compl ul li {
+  .compl ul li {
     list-style-type: none;
     margin: auto;
     background: #e9900b;
@@ -700,64 +824,127 @@ font-size: 28px;
     position: relative;
     box-sizing: border-box;
     height: 100%;
-}
+  }
 
-.lignetitre{
-  font-weight: bold;
-  line-height: inherit;
-}
+  .lignetitre{
+    font-weight: bold;
+    line-height: inherit;
+  }
 
-.ligne-comp{
-  height:100%;
-}
+  .ligne-comp{
+    height:100%;
+  }
 
-#competences > div.compr > div > ul:nth-child(2) > li > div.description{
-  margin: auto;
-  box-sizing: border-box;
-}
-#competences > div.competences > h2{
-  font-size: 28px;
-}
+  #competences > div.compr > div > ul:nth-child(2) > li > div.description{
+    margin: auto;
+    box-sizing: border-box;
+  }
+  #competences > div.competences > h2{
+    font-size: 28px;
+  }
 
 
-.compr .compr80 .compl .compl80 ul li{
-  width: 100%;
-  padding: auto;
-  box-sizing: border-box;
-}
-.compr {
-  display: flex;
-  flex-flow: row-reverse;
-  width: 100%;
-  box-sizing: border-box;
-}
+  .compr .compr80 .compl .compl80 ul li{
+    width: 100%;
+    padding: auto;
+    box-sizing: border-box;
+  }
+  .compr{
+    display: flex;
+    flex-flow: row-reverse;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .compl{
+    display: flex;
+    flex-flow: row-reverse;
+    width: 100%;
+  }
+  #competences > div.compl{
+    float: none
+  }
+  #competences > div.compr{
+    float: none;
+  }
+  .lunel{
+    box-sizing: border-box;
+    width: 100%;
+  }
 
-.compl {
-  display: flex;
-  flex-flow: row-reverse;
-  width: 100%;
-}
-#competences > div.compl{
-  float: none
-}
-#competences > div.compr{
-  float: none;
+  .cont_luner{
+    box-sizing: border-box;
+    width: 26%;
+  }
+  .luner{
+    box-sizing: border-box;
+    width: 100%;
+  }
 
-}
-.lunel{
-  box-sizing: border-box;
-  width: 100%;
+  #realisations{
+    display: flex;
+    flex-flow: column nowrap;
+ }
 
-}
+  #realisations > div.realisations > div.read > div.real{
+    margin: auto;
+    box-sizing: border-box;
+  }
+  #realisations > div.realisations > h2{
+    font-size: 28px;
+  }
+  #realisations > div.realisations > figure > img{
+    box-sizing: border-box;
+    width: 36%;
+  }
+  #realisations > div.read80{
+    float: none;
+  }
+  #realisations > div.real80{
+    float: none;
+  }
+  #realisations > div.realisations > h2 > span{
+    float: none;
+  }
+  .read .read80 .real .real80 ul li{
+    width: 100%;
+    padding: auto;
+    box-sizing: border-box;
+  }
+  .read ul li {
+    list-style-type: none;
+    margin: auto;
+    background: #e9900b;
+    border-left: 1px dashed #86D6FF;
+    padding: 30px 15px;
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .reaL ul li {
+    list-style-type: none;
+    margin: auto;
+    background: #e9900b;
+    border-left: 1px dashed #86D6FF;
+    padding: 15px 15px;
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .read{
+    display: flex;
+    flex-flow: row-reverse;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .real{
+    display: flex;
+    flex-flow: row-reverse;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-.cont_luner{
-  width: 26%;
-
-}
-.luner{
-  box-sizing: border-box;
-  width: 100%;
-
-}
+  .ligne-rea {
+    height:100%;
+  }
 
 }
